@@ -116,7 +116,7 @@ os.makedirs(output_dir, exist_ok=True)
 # === Step 6: Define output columns ===
 columns_to_keep = ["Contact", "First Name", "Last Name"]
 
-# Optional: Validate columns exist
+# This validates if columns exist
 for col in columns_to_keep:
     if col not in df.columns:
         raise ValueError(f"\u274c Missing expected column: {col}")
